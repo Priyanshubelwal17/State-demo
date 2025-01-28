@@ -12,7 +12,7 @@ function App() {
     <>
       <Dumbo />
       <h1>state Demo!</h1>
-      {/* <Counter /> */}
+      <Counter />
     </>
   )
 }
