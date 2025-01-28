@@ -4,15 +4,17 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Counter from './Counter'
 import Dumbo from './Dumbo'
+import ScoreKeeper from './ScoreKeeper'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Dumbo />
+      <ScoreKeeper />
+      {/* <Dumbo />
       <h1>state Demo!</h1>
-      <Counter />
+      <Counter /> */}
     </>
   )
 }
