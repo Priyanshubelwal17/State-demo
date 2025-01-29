@@ -6,13 +6,14 @@ import Counter from './Counter'
 import Dumbo from './Dumbo'
 import ScoreKeeper from './ScoreKeeper'
 import EmojiClicker from './EmojiClicker'
-
+import ScoreKeeperEx from './ScoreKeeperEx'
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <EmojiClicker />
+      <ScoreKeeperEx />
+      {/* <EmojiClicker /> */}
       {/* <ScoreKeeper /> */}
       {/* <Dumbo />
       <h1>state Demo!</h1>
