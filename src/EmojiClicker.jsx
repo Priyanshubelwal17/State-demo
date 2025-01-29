@@ -11,7 +11,13 @@ export default function EmojiClicker() {
             return previousemojies.filter(e => e.id !== id)
         })
     }
-
+    const makeEverythingPotty = () => {
+        setEmojies((previousemojies) => {
+            return previousemojies.map((e) => {
+                return { ...e, emoji: '💩' }
+            })
+        })
+    }
     return (
         <div>
             {emojies.map((e) => (
@@ -20,6 +26,7 @@ export default function EmojiClicker() {
                     key={e.id} style={{ fontSize: "4rem" }} >{e.emoji}</span>
             ))}
             <button onClick={addEmojies} >Add Emojie</button>
+            <button onClick={makeEverythingPotty} >Make them all Potty</button>
         </div>
     )
 }
